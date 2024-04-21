@@ -33,10 +33,9 @@ import { Provider } from "jotai";
 import { onlyTabFocus } from "@/lib/onlyTabFocus";
 
 function Providers({ children }: any) {
+  onlyTabFocus();
   return <Provider>{children}</Provider>;
 }
-
-onlyTabFocus();
 
 export default function RootLayout({
   children,
