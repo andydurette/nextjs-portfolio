@@ -31,7 +31,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import { Provider } from "jotai";
 
-export function Providers({ children }: any) {
+function Providers({ children }: any) {
   return <Provider>{children}</Provider>;
 }
 
