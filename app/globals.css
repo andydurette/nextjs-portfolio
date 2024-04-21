@@ -102,7 +102,10 @@ nav {
   left: 0;
   width: 100%;
   z-index: 500;
-  min-height: 55px;
+  min-height: 53px;
+}
+nav div {
+  padding: 2px;
 }
 nav a {
   display: flex;
