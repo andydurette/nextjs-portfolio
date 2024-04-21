@@ -62,17 +62,14 @@ const PortfolioList = () => {
             </select>
           </div>
         </div>
-        {portfolioState.map(
-          (portfolio) =>
-            portfolioFilter && (
-              <PortfolioItem
-                key={portfolio.id}
-                portfolio={portfolio}
-                portfolioFilter={portfolioFilter}
-                mounted={mounted}
-              />
-            )
-        )}
+        {portfolioState.map((portfolio) => (
+          <PortfolioItem
+            key={portfolio.id}
+            portfolio={portfolio}
+            portfolioFilter={portfolioFilter}
+            mounted={mounted}
+          />
+        ))}
       </div>
     </section>
   );
