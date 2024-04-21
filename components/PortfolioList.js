@@ -28,10 +28,6 @@ const PortfolioList = () => {
     PortfolioAnimation();
   }, []);
 
-  useEffect(() => {
-    console.log(portfolioFilter);
-  }, [portfolioFilter]);
-
   return (
     <section id="portfolio">
       <div id="portfolio-grid">

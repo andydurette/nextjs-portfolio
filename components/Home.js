@@ -50,7 +50,6 @@ const Home = () => {
     query: "(min-width: 901px)",
   });
 
-  //console.log(isDesktopOrLaptop)
   return (
     <React.Fragment>
       {isDesktopOrLaptop ? (
