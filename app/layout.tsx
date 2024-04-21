@@ -30,10 +30,8 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 import { Provider } from "jotai";
-import { onlyTabFocus } from "@/lib/onlyTabFocus";
 
 function Providers({ children }: any) {
-  onlyTabFocus();
   return <Provider>{children}</Provider>;
 }
 

@@ -34,6 +34,7 @@ const Home = () => {
 
   useEffect(() => {
     // Add event Listener for animation events
+    onlyTabFocus();
     HomeAnimation();
 
     if (
