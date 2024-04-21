@@ -4,6 +4,7 @@ import IsElementXPercentInViewport from "../components/util/IsElementXPercentInV
 import { useSpring, animated } from "react-spring";
 import { useMediaQuery } from "react-responsive";
 import * as easings from "d3-ease";
+import { onlyTabFocus } from "@/lib/onlyTabFocus";
 const Home = () => {
   const [isToggledOpacity, setToggledOpacity] = useState(false);
 
