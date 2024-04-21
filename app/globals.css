@@ -90,17 +90,6 @@ body h4 {
 body h5 {
   font-size: 1.25rem;
 }
-/* This will hide the focus indicator if the element receives focus via the mouse, but it will still show up on keyboard focus. */
-/* Remove outline for non-keyboard :focus */
-*:focus:not(.focus-visible) {
-  outline: none;
-}
-/* Optional: Customize .focus-visible */
-.focus-visible {
-  outline: 2px solid #fcb040;
-}
-
-/************************************ NAV ********************************/
 
 /* Scss variables */
 /* Navigation css */
@@ -113,7 +102,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 500;
-  min-height: 53px;
+  min-height: 55px;
 }
 nav a {
   display: flex;
@@ -136,6 +125,9 @@ nav a[active="active"] {
 nav a:hover {
   color: #37c5f3;
   border-bottom: 1px solid #37c5f3;
+}
+nav a:focus-visible {
+  outline: 3px solid #fcb040;
 }
 nav button.icon {
   font-size: 35px;
@@ -441,6 +433,9 @@ div.intro-image img {
   background-color: #117a8b;
   border-color: #10707f;
 }
+#expertise #expertise-grid .expertise-piece .btn:focus-visible {
+  outline: 3px solid #fcb040;
+}
 #expertise #expertise-grid .expertise-piece .expertise-icons {
   display: flex;
   flex-wrap: wrap;
@@ -588,6 +583,10 @@ div.intro-image img {
   background-color: #117a8b;
   border-color: #10707f;
 }
+
+#portfolio #portfolio-grid .portfolio-piece .btn:focus-visible {
+  outline: 3px solid #fcb040;
+}
 #portfolio #portfolio-grid .portfolio-piece img {
   width: 80%;
   margin-left: 10%;
@@ -653,6 +652,11 @@ div.intro-image img {
   overflow-x: hidden;
   min-width: 150px;
 }
+
+#portfolio-filter #portfolio-filter-select:focus-visible {
+  outline: 3px solid #fcb040;
+}
+
 @media only screen and (min-width: 600px) {
   #portfolio-filter {
     justify-content: flex-end;
@@ -831,29 +835,37 @@ footer {
     sans-serif;
   justify-content: space-evenly;
   max-width: 1140px;
+}
+footer svg {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  transition: all 0.3s;
+  line-height: 40px;
+}
+footer svg:hover,
+footer a:focus svg {
+  fill: #37c5f3;
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
 
-  svg {
-    width: 40px;
-    height: 40px;
-    fill: #fff;
-    transition: all 0.3s;
-    line-height: 40px;
-  }
-  svg:hover,
-  a:focus svg {
-    fill: #37c5f3;
-    margin-top: -2px;
-    margin-bottom: 2px;
-  }
-  .footerLinks ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 20px 0 20px 0;
-  }
-  ul li:not(:last-child) {
-    margin-right: 0.5rem;
-  }
+footer a:focus-visible {
+  outline: 0px solid #fcb040;
+}
+
+footer a:focus-visible svg {
+  outline: 3px solid #fcb040;
+}
+
+footer .footerLinks ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+footer ul li:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 @media only screen and (min-width: 700px) {
