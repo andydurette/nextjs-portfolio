@@ -15,6 +15,7 @@ import {
   portfolioAtom,
 } from "../jotai/index";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 export default function App() {
   const Preloader = () => {
@@ -39,17 +40,19 @@ export default function App() {
   }
 
   return (
-    <Provider>
-      <main className="flex min-h-screen flex-col items-center justify-between">
-        {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> */}
-        <Preloader />
-        <Nav />
-        <Home />
-        <ExpertiseList />
-        <PortfolioList />
-        <Contact />
-        {/* </div> */}
-      </main>
-    </Provider>
+    <>
+      <Provider>
+        <main className="flex min-h-screen flex-col items-center justify-between">
+          {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> */}
+          <Preloader />
+          <Nav />
+          <Home />
+          <ExpertiseList />
+          <PortfolioList />
+          <Contact />
+          {/* </div> */}
+        </main>
+      </Provider>
+    </>
   );
 }
