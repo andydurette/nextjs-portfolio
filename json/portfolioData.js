@@ -155,7 +155,7 @@ export const portfolioData = [
     name: "30 day icon challenge",
     description:
       "A project where I designed an icon a day for a month in order to better produce vector graphics quickly and efficently.",
-    siteUrl: "https://icon-gallery.netlify.com/",
+    siteUrl: "https://icon-gallery.netlify.app/",
     siteAria: "View 30 Day Icon Challenge portfolio website",
     repoUrl: "https://github.com/andydurette/icon-gallery",
     repoAria: "View 30 Day Icon Challenge portfolio repo",
@@ -186,7 +186,7 @@ export const portfolioData = [
     name: "Bees of America",
     description:
       "A project where I researched the history of bees and utilized React.js, github and Netlify to host a react routed app.",
-    siteUrl: "https://bees-react.netlify.com/",
+    siteUrl: "https://bees-react.netlify.app/",
     siteAria: "View Bees of America portfolio website",
     repoUrl: "https://github.com/andydurette/Bees",
     repoAria: "View Bees of America portfolio website",

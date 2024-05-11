@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import PortfolioItem from "./PortfolioItem";
 import IsElementXPercentInViewport from "../components/util/IsElementXPercentInViewport";
 import { portfolioAtom } from "../jotai/index";
